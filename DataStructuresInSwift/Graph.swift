@@ -23,4 +23,19 @@ class Graph {
         canvas!.append(childVertex)
         return childVertex
     }
+    
+    func addEdge(source: Vertex, neighbor: Vertex, weight: Int){
+        
+        var newEdge = Edge()
+        newEdge.neighbor = neighbor
+        newEdge.weight = weight
+        source.neighbors?.append(newEdge)
+        
+        if isDirected == false {
+            var reverseEdge = Edge()
+            reverseEdge.neighbor = source
+            reverseEdge.weight = weight
+            neighbor.neighbors?.append(reverseEdge)
+        }
+    }
 }
