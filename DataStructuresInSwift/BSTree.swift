@@ -21,7 +21,6 @@ class BSTree <T:Comparable> {
         }
         
         if key > self.key {
-            
             if self.rightTree != nil {
                 rightTree?.addNode(key)
             }else {
@@ -29,9 +28,7 @@ class BSTree <T:Comparable> {
                 rightChild.key = key
                 self.rightTree = rightChild
             }
-            
         }else {
-            
             if self.leftTree != nil {
                 leftTree?.addNode(key)
             }else {
@@ -39,11 +36,6 @@ class BSTree <T:Comparable> {
                 leftChild.key = key
                 self.leftTree = leftChild
             }
-            
-            
-            
-            
         }
-        
     }
 }
