@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE01FA2F1B7D355100A366EB /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01FA2E1B7D355100A366EB /* Vertex.swift */; };
+		BE01FA311B7D355E00A366EB /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01FA301B7D355E00A366EB /* Graph.swift */; };
+		BE01FA331B7D414300A366EB /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01FA321B7D414300A366EB /* Edge.swift */; };
 		BE247D821B7C1EF7009D23CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D811B7C1EF7009D23CA /* AppDelegate.swift */; };
 		BE247D841B7C1EF7009D23CA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D831B7C1EF7009D23CA /* MasterViewController.swift */; };
 		BE247D871B7C1EF7009D23CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE247D851B7C1EF7009D23CA /* Main.storyboard */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE01FA2E1B7D355100A366EB /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		BE01FA301B7D355E00A366EB /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		BE01FA321B7D414300A366EB /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		BE247D7C1B7C1EF7009D23CA /* DataStructuresInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE247D801B7C1EF7009D23CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE247D811B7C1EF7009D23CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE01FA341B7D41FF00A366EB /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				BE01FA2E1B7D355100A366EB /* Vertex.swift */,
+				BE01FA321B7D414300A366EB /* Edge.swift */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
 		BE247D731B7C1EF7009D23CA = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +163,7 @@
 				BE247DA31B7C1F6C009D23CA /* LLNode.swift */,
 				BEC4D7B11B7D1C5E00C6877C /* QNode.swift */,
 				BE247DAA1B7C286F009D23CA /* AVLTree.swift */,
+				BE01FA341B7D41FF00A366EB /* Graph */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -158,6 +174,7 @@
 				BE247DA51B7C1F77009D23CA /* LinkedList.swift */,
 				BEC4D7B51B7D1CAC00C6877C /* Queue.swift */,
 				BEC4D7B31B7D1CA100C6877C /* Stack.swift */,
+				BE01FA301B7D355E00A366EB /* Graph.swift */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -262,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE01FA331B7D414300A366EB /* Edge.swift in Sources */,
 				BE247D841B7C1EF7009D23CA /* MasterViewController.swift in Sources */,
 				BE247DAB1B7C286F009D23CA /* AVLTree.swift in Sources */,
+				BE01FA2F1B7D355100A366EB /* Vertex.swift in Sources */,
 				BEC4D7B41B7D1CA100C6877C /* Stack.swift in Sources */,
+				BE01FA311B7D355E00A366EB /* Graph.swift in Sources */,
 				BEC4D7B61B7D1CAC00C6877C /* Queue.swift in Sources */,
 				BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */,
 				BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */,
