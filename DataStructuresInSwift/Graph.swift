@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class Graph {
+    var canvas: Array<Vertex>?
+    var isDirected: Bool?
+    
+    init(){
+        canvas = Array<Vertex>()
+        isDirected = true
+    }
+    
+    func addVertex(key: String) ->Vertex{
+        var childVertex = Vertex()
+        childVertex.key = key
+        canvas!.append(childVertex)
+        return childVertex
+    }
+}
