@@ -22,13 +22,13 @@ class Queue<T> {
             return
         }
         
-        var childToUse: QNode<T> = QNode<T>()
         var current = top
         
         while current.nextNode != nil {
             current = current.nextNode!
         }
         
+        var childToUse: QNode<T> = QNode<T>()
         childToUse.key = key
         current.nextNode = childToUse
     }
