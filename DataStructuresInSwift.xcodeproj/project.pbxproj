@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE247D821B7C1EF7009D23CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D811B7C1EF7009D23CA /* AppDelegate.swift */; };
-		BE247D841B7C1EF7009D23CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D831B7C1EF7009D23CA /* ViewController.swift */; };
+		BE247D841B7C1EF7009D23CA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D831B7C1EF7009D23CA /* MasterViewController.swift */; };
 		BE247D871B7C1EF7009D23CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE247D851B7C1EF7009D23CA /* Main.storyboard */; };
 		BE247D891B7C1EF7009D23CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE247D881B7C1EF7009D23CA /* Images.xcassets */; };
 		BE247D8C1B7C1EF7009D23CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE247D8A1B7C1EF7009D23CA /* LaunchScreen.xib */; };
@@ -29,7 +29,7 @@
 		BE247D7C1B7C1EF7009D23CA /* DataStructuresInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE247D801B7C1EF7009D23CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE247D811B7C1EF7009D23CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE247D831B7C1EF7009D23CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE247D831B7C1EF7009D23CA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		BE247D861B7C1EF7009D23CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE247D881B7C1EF7009D23CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE247D8B1B7C1EF7009D23CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				BE247D811B7C1EF7009D23CA /* AppDelegate.swift */,
-				BE247D831B7C1EF7009D23CA /* ViewController.swift */,
+				BE247DA21B7C1F21009D23CA /* DataStructure */,
+				BE247DA11B7C1F0F009D23CA /* Controller */,
 				BE247D851B7C1EF7009D23CA /* Main.storyboard */,
 				BE247D881B7C1EF7009D23CA /* Images.xcassets */,
 				BE247D8A1B7C1EF7009D23CA /* LaunchScreen.xib */,
@@ -110,6 +111,21 @@
 				BE247D961B7C1EF7009D23CA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE247DA11B7C1F0F009D23CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE247D831B7C1EF7009D23CA /* MasterViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BE247DA21B7C1F21009D23CA /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE247D841B7C1EF7009D23CA /* ViewController.swift in Sources */,
+				BE247D841B7C1EF7009D23CA /* MasterViewController.swift in Sources */,
 				BE247D821B7C1EF7009D23CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
