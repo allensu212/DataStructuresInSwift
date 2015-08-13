@@ -15,6 +15,7 @@
 		BE247D981B7C1EF7009D23CA /* DataStructuresInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D971B7C1EF7009D23CA /* DataStructuresInSwiftTests.swift */; };
 		BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DA31B7C1F6C009D23CA /* LLNode.swift */; };
 		BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DA51B7C1F77009D23CA /* LinkedList.swift */; };
+		BE247DAB1B7C286F009D23CA /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DAA1B7C286F009D23CA /* BSTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BE247D971B7C1EF7009D23CA /* DataStructuresInSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructuresInSwiftTests.swift; sourceTree = "<group>"; };
 		BE247DA31B7C1F6C009D23CA /* LLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLNode.swift; sourceTree = "<group>"; };
 		BE247DA51B7C1F77009D23CA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		BE247DAA1B7C286F009D23CA /* BSTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				BE247DA71B7C1FB0009D23CA /* LinkedList */,
+				BE247DA91B7C27E9009D23CA /* BinarySearchTree */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -140,6 +143,14 @@
 				BE247DA51B7C1F77009D23CA /* LinkedList.swift */,
 			);
 			name = LinkedList;
+			sourceTree = "<group>";
+		};
+		BE247DA91B7C27E9009D23CA /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				BE247DAA1B7C286F009D23CA /* BSTree.swift */,
+			);
+			name = BinarySearchTree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE247D841B7C1EF7009D23CA /* MasterViewController.swift in Sources */,
+				BE247DAB1B7C286F009D23CA /* BSTree.swift in Sources */,
 				BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */,
 				BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */,
 				BE247D821B7C1EF7009D23CA /* AppDelegate.swift in Sources */,
@@ -441,6 +453,7 @@
 				BE247D9D1B7C1EF7009D23CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE247D9E1B7C1EF7009D23CA /* Build configuration list for PBXNativeTarget "DataStructuresInSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +462,7 @@
 				BE247DA01B7C1EF7009D23CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
