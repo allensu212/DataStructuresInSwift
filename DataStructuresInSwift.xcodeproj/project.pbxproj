@@ -16,6 +16,7 @@
 		BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DA31B7C1F6C009D23CA /* LLNode.swift */; };
 		BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DA51B7C1F77009D23CA /* LinkedList.swift */; };
 		BE247DAB1B7C286F009D23CA /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DAA1B7C286F009D23CA /* AVLTree.swift */; };
+		BEC4D7B21B7D1C5E00C6877C /* QNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4D7B11B7D1C5E00C6877C /* QNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BE247DA31B7C1F6C009D23CA /* LLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLNode.swift; sourceTree = "<group>"; };
 		BE247DA51B7C1F77009D23CA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		BE247DAA1B7C286F009D23CA /* AVLTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
+		BEC4D7B11B7D1C5E00C6877C /* QNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				BE247DA71B7C1FB0009D23CA /* LinkedList */,
 				BE247DA91B7C27E9009D23CA /* BinarySearchTree */,
+				BEC4D7B01B7D1C3F00C6877C /* StackAndQueue */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -151,6 +154,14 @@
 				BE247DAA1B7C286F009D23CA /* AVLTree.swift */,
 			);
 			name = BinarySearchTree;
+			sourceTree = "<group>";
+		};
+		BEC4D7B01B7D1C3F00C6877C /* StackAndQueue */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4D7B11B7D1C5E00C6877C /* QNode.swift */,
+			);
+			name = StackAndQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */,
 				BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */,
 				BE247D821B7C1EF7009D23CA /* AppDelegate.swift in Sources */,
+				BEC4D7B21B7D1C5E00C6877C /* QNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import UIKit
 class MasterViewController: UIViewController {
     
     let numberList : Array<Int> = [8, 2, 10, 9, 11, 1, 7]
+    let balanceList: Array<Int> = [29, 26, 23]
     
     override func viewDidLoad() {
         super.viewDidLoad()

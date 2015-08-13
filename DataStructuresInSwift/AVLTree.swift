@@ -9,7 +9,9 @@
 import Foundation
 
 class AVLTree <T:Comparable> {
+    
     var key: T?
+    var height: Int?
     var leftTree: AVLTree?
     var rightTree: AVLTree?
     
