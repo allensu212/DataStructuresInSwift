@@ -18,7 +18,7 @@ class MasterViewController: UIViewController {
     }
     
     func addBinarySearchTree(){
-        var rootNode = BSTree<Int>()
+        var rootNode = AVLTree<Int>()
         for number in numberList {
             rootNode.addNode(number)
         }

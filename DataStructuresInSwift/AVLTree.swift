@@ -8,10 +8,10 @@
 
 import Foundation
 
-class BSTree <T:Comparable> {
+class AVLTree <T:Comparable> {
     var key: T?
-    var leftTree: BSTree?
-    var rightTree: BSTree?
+    var leftTree: AVLTree?
+    var rightTree: AVLTree?
     
     func addNode(key: T){
         
@@ -24,7 +24,7 @@ class BSTree <T:Comparable> {
             if self.rightTree != nil {
                 rightTree?.addNode(key)
             }else {
-                var rightChild = BSTree()
+                var rightChild = AVLTree()
                 rightChild.key = key
                 self.rightTree = rightChild
             }
@@ -32,7 +32,7 @@ class BSTree <T:Comparable> {
             if self.leftTree != nil {
                 leftTree?.addNode(key)
             }else {
-                var leftChild = BSTree()
+                var leftChild = AVLTree()
                 leftChild.key = key
                 self.leftTree = leftChild
             }
