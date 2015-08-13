@@ -13,6 +13,8 @@
 		BE247D891B7C1EF7009D23CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE247D881B7C1EF7009D23CA /* Images.xcassets */; };
 		BE247D8C1B7C1EF7009D23CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE247D8A1B7C1EF7009D23CA /* LaunchScreen.xib */; };
 		BE247D981B7C1EF7009D23CA /* DataStructuresInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247D971B7C1EF7009D23CA /* DataStructuresInSwiftTests.swift */; };
+		BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DA31B7C1F6C009D23CA /* LLNode.swift */; };
+		BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE247DA51B7C1F77009D23CA /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		BE247D911B7C1EF7009D23CA /* DataStructuresInSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresInSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE247D961B7C1EF7009D23CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE247D971B7C1EF7009D23CA /* DataStructuresInSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructuresInSwiftTests.swift; sourceTree = "<group>"; };
+		BE247DA31B7C1F6C009D23CA /* LLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLNode.swift; sourceTree = "<group>"; };
+		BE247DA51B7C1F77009D23CA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +128,18 @@
 		BE247DA21B7C1F21009D23CA /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				BE247DA71B7C1FB0009D23CA /* LinkedList */,
 			);
 			name = DataStructure;
+			sourceTree = "<group>";
+		};
+		BE247DA71B7C1FB0009D23CA /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				BE247DA31B7C1F6C009D23CA /* LLNode.swift */,
+				BE247DA51B7C1F77009D23CA /* LinkedList.swift */,
+			);
+			name = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE247D841B7C1EF7009D23CA /* MasterViewController.swift in Sources */,
+				BE247DA41B7C1F6C009D23CA /* LLNode.swift in Sources */,
+				BE247DA61B7C1F77009D23CA /* LinkedList.swift in Sources */,
 				BE247D821B7C1EF7009D23CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
