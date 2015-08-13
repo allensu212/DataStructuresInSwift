@@ -19,17 +19,16 @@ class LinkedList<T: Equatable> {
         }
         
         var currentNode: LLNode? = headNode
+        
         while currentNode != nil {
-            
-            if currentNode?.nextNode == nil {
+            if currentNode?.nextNode != nil {
+                currentNode = currentNode?.nextNode
+            }else {
                 var childNode = LLNode<T>()
                 childNode.key = key
                 childNode.previousNode = currentNode
                 currentNode!.nextNode = childNode
                 break
-            }
-            else {
-                currentNode = currentNode?.nextNode
             }
         }
         
