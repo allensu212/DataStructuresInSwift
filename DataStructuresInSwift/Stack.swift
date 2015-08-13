@@ -1,5 +1,5 @@
 //
-//  QNode.swift
+//  Stack.swift
 //  DataStructuresInSwift
 //
 //  Created by Wei-Lun Su on 8/13/15.
@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-class QNode<T> {
-    var key: T?
-    var nextNode: QNode?
-}
