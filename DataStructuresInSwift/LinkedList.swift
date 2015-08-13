@@ -10,6 +10,7 @@ import Foundation
 
 class LinkedList<T: Equatable> {
     
+    var count: Int!
     var headNode: LLNode<T> = LLNode<T>()
     
     func addLink(key: T) {
@@ -30,6 +31,26 @@ class LinkedList<T: Equatable> {
                 currentNode!.nextNode = childNode
                 break
             }
+        }
+    }
+    
+    func removeLinkAtIndex(index: Int) {
+        
+        //check nil conditions
+        if index < 0 || index > (self.count - 1) || headNode.key == nil {
+            print("link index doesn't exist")
+            return
+        }
+        
+        var currentNode = headNode
+        var trailingNode: LLNode<T>?
+        var listIndex: Int = 0
+        
+        //determine if removing the head node
+        if index == 0 {
+            currentNode = currentNode.nextNode
+            headNode = currentNode
+            return
         }
         
     }
