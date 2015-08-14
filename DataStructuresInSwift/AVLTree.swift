@@ -15,18 +15,20 @@ class AVLTree <T:Comparable> {
     var leftTree: AVLTree?
     var rightTree: AVLTree?
     
-    //MARK: Traversal algorithms
+    //MARK: Traversal algorithms, Depth First Search, Recursion, Stack
     
-    func processAVLDepthTraversal(){
+    func traverse(){
         if self.key == nil {
             print("no key provided")
             return
         }
+        
         if self.leftTree != nil {
-            leftTree?.processAVLDepthTraversal()
+            leftTree?.traverse()
         }
+        
         if self.rightTree != nil {
-            rightTree?.processAVLDepthTraversal()
+            rightTree?.traverse()
         }
     }
     

@@ -17,7 +17,7 @@ class Graph {
         isDirected = true
     }
     
-    //MARK: Traversal algorithms
+    //MARK: Traversal algorithms, Breath First Search, Queue
 
     func traverseGraphBFS(startingVertice: Vertex){
         var graphQueue: Queue<Vertex> = Queue<Vertex>()
