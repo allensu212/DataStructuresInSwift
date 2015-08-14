@@ -17,6 +17,28 @@ class Graph {
         isDirected = true
     }
     
+    //MARK: Traversal algorithms
+
+    func traverseGraphBFS(startingVertice: Vertex){
+        var graphQueue: Queue<Vertex> = Queue<Vertex>()
+        graphQueue.enQueue(startingVertice)
+        
+        while !graphQueue.isEmpty() {
+            
+            let vItem = graphQueue.deQueue() as Vertex!
+            
+            //add unvisited vertices to the queue
+            for edge in vItem.neighbors! {
+                if edge.neighbor?.visited == false {
+                    graphQueue.enQueue(edge.neighbor!)
+                }
+            }
+            vItem.visited = true
+        }
+    }
+    
+    //MARK: Adding Vertex or Edge
+    
     func addVertex(key: String) ->Vertex{
         var childVertex = Vertex()
         childVertex.key = key

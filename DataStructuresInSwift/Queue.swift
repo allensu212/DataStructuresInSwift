@@ -12,6 +12,34 @@ class Queue<T> {
     
     private var top: QNode<T>! = QNode<T>()
     
+    func isEmpty() ->Bool{
+        if let topItem: T = self.top.key {
+            return false
+        }else {
+            return true
+        }
+    }
+    
+    //MARK: enQueue and deQueue
+    
+    func deQueue() ->T?{
+        let topItem = self.top?.key
+        
+        if topItem == nil {
+            return nil
+        }
+        
+        var queueItem = top.key!
+        
+        if let nextItem = top.nextNode {
+            top = nextItem
+        }else {
+            top = QNode<T>()
+        }
+        
+        return queueItem
+    }
+    
     func enQueue(key: T){
         
         if top == nil {
@@ -32,5 +60,4 @@ class Queue<T> {
         childToUse.key = key
         current.nextNode = childToUse
     }
-    
 }
